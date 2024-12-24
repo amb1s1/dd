@@ -1,0 +1,44 @@
+# Domino Domination (DD)
+
+This is a simple Go application that serves as a starting point for building Go projects.
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- Go installed on your machine (version 1.16 or later)
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/amb1s1/dd.git
+   ```
+2. Navigate into the project directory:
+   ```
+   cd dd
+   ```
+3. Install dependencies:
+   ```
+   go mod tidy
+   ```
+
+### Running the Application
+ TODO
+
+
+### Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. The use of this software is free of charge to any person obtaining a copy, including without limitation, the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software. 
