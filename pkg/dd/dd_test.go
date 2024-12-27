@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func testGame(t *testing.T) {
+func TestGame(t *testing.T) {
 	// Create a new game
 	g := NewGame()
 	wantPlayers := map[string]bool{"alice": true, "bob": true, "charlie": true, "david": true}
