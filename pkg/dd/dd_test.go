@@ -7,16 +7,17 @@ import (
 func TestGame(t *testing.T) {
 	// Create a new game
 	g := NewGame()
-	wantPlayers := map[string]bool{"alice": true, "bob": true, "charlie": true, "david": true}
+	wantPlayers := map[string]bool{"alice": true, "jose": true, "charlie": true, "david": true}
 	teams := map[string][]string{"team1": {"alice", "charlie"}, "team2": {"david", "jose"}}
-	for team, players := range teams {
-		t := NewTeam(team)
+	for tm, players := range teams {
+		team := NewTeam(tm)
 		for _, player := range players {
 			p := NewPlayer(player)
-			t.AddPlayer(p)
+			team.AddPlayer(p)
 		}
-		g.AddTeam(t)
+		g.AddTeam(team)
 	}
+	g.Start()
 	if len(g.teams) != 2 {
 		t.Errorf("Expected 2 teams, got %d", len(g.teams))
 	}
